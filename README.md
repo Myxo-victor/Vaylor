@@ -1,37 +1,37 @@
-# Chronos.js
+# Vaylor.js
 
 > A lightweight, zero-dependency CSS engine that runs directly in the browser.
 
-Chronos.js lets you write clean, maintainable responsive CSS using modern helper functions — like `fluid()` for typography and `stack-below()` for layouts — without requiring any build steps (Sass, PostCSS, or Webpack).
+Vaylor.js lets you write clean, maintainable responsive CSS using modern helper functions — like `fluid()` for typography and `stack-below()` for layouts — without requiring any build steps (Sass, PostCSS, or Webpack).
 
-- 📖 **Documentation:** [chronos.aximon.ng](https://chronos.aximon.ng)
+- 📖 **Documentation:** [vaylor.aximon.ng](https://vaylor.aximon.ng)
 - 🌐 **Portfolio:** [myxo.aximon.ng](https://myxo.aximon.ng)
 
 ---
 
-##  Why Chronos?
+##  Why Vaylor?
 
 - **Zero-Build Pipeline:** Drop a script tag, link your CSS, and you're done. No compilation, no setup, no `node_modules`.
-- **Opt-in Logic:** Chronos only touches the functions you define. Your existing `@media`, `@keyframes`, and `@font-face` blocks are ignored and pass through completely untouched.
-- **Intelligent Parsing:** Unlike flat regex-based parsers, Chronos tracks brace depth. It handles complex, nested CSS structures without corrupting your styles.
+- **Opt-in Logic:** Vaylor only touches the functions you define. Your existing `@media`, `@keyframes`, and `@font-face` blocks are ignored and pass through completely untouched.
+- **Intelligent Parsing:** Unlike flat regex-based parsers, Vaylor tracks brace depth. It handles complex, nested CSS structures without corrupting your styles.
 - **Zero-Config Mobile Nav:** Automatically detects your `<header>` and transforms your nav into a polished, slide-in mobile navigation menu with zero manual JavaScript.
-- **Accessible Typography:** Chronos resolves `fluid()` typography in `rem` units, ensuring that if a user bumps their browser's default text size, your responsive layout scales with their preference.
+- **Accessible Typography:** Vaylor resolves `fluid()` typography in `rem` units, ensuring that if a user bumps their browser's default text size, your responsive layout scales with their preference.
 
 ---
 
 ##  Quick Start
 
-### 1. Include Chronos.js in your document
+### 1. Include Vaylor.js in your document
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/Myxo-victor/Chronos@v1.0.0/Chronos.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Myxo-victor/Vaylor@v1.0.0/Vaylor.js"></script>
 ```
 
 ### 2. Initialize in your `index.html`
 
 ```html
 <script>
-  Chronos.respond('style.css');
+  Vaylor.respond('style.css');
 </script>
 ```
 
@@ -57,17 +57,17 @@ Chronos.js lets you write clean, maintainable responsive CSS using modern helper
 
 ---
 
-## 🛠️ Local Development (`file://` protocol)
+##  Local Development (`file://` protocol)
 
-Browsers block `fetch()` on `file://` URLs, so Chronos provides a fallback. Define your styles directly in the HTML:
+Browsers block `fetch()` on `file://` URLs, so Vaylor provides a fallback. Define your styles directly in the HTML:
 
 ```html
-<style type="text/chronos">
+<style type="text/vaylor">
   .hero { font-size: fluid(24px, 48px); }
 </style>
 ```
 
-Chronos automatically detects these tags and compiles them without needing a server.
+Vaylor automatically detects these tags and compiles them without needing a server.
 
 ---
 
