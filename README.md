@@ -9,7 +9,7 @@ Chronos.js lets you write clean, maintainable responsive CSS using modern helper
 
 ---
 
-## ✨ Why Chronos?
+##  Why Chronos?
 
 - **Zero-Build Pipeline:** Drop a script tag, link your CSS, and you're done. No compilation, no setup, no `node_modules`.
 - **Opt-in Logic:** Chronos only touches the functions you define. Your existing `@media`, `@keyframes`, and `@font-face` blocks are ignored and pass through completely untouched.
@@ -19,7 +19,7 @@ Chronos.js lets you write clean, maintainable responsive CSS using modern helper
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Include Chronos.js in your document
 
